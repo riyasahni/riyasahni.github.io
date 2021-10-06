@@ -5,16 +5,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Latency test</title>
     <script>
-       var start_time = new Date().getTime();
-       
-       function change_color() {
-         //func that changes color of green button to red 
-         //after some randomly generated amount of time,
-          
-       }
-       
-       //another func for "on-click" will start here, where
-       //I will call "change_color()"
+       const {performance} = require('perf_hooks');
+const comp_prompt = require('prompt-sync')({sigint: true});
+
+function reacTime(){
+    const t0 = (new Date()).getTime();
+   // var e = comp_prompt("***NOW!*** ");
+    if(comp_prompt("***NOW!*** ")){
+        const t1 = (new Date()).getTime();
+        var reactionTime = t1-t0;
+        console.log("reaction time: ", reactionTime);
+    }
+    
+}
+console.log("When you see '***NOW!***' Hit ENTER as fast as you can");
+setTimeout(function(){console.log("Ready?");},  2000);
+setTimeout(function(){reacTime()},  4000);
        
     </script>
 <style> 
@@ -50,5 +56,6 @@
       <h1>Click the green dot to START. When it turns red, click the dot to STOP.</h1>
   
       <a class="fa fa-green"></a>
+      <p id= "yourTime"> Your time: <span id="timeTaken"></span></p>
    </body>
 </html>
