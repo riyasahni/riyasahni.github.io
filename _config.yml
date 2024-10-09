@@ -1,2 +1,3 @@
 name: Riya Sahni
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
