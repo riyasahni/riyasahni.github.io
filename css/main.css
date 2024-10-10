@@ -183,13 +183,13 @@ section {
 .updates-list {
     padding-left: 20px; /* Indentation for bullet points */
     font-family: 'Helvetica', 'Arial', 'Sans-Serif'; /* Matches other text on the page */
-    font-size: 0.9em; /* Consistent font size with the rest of the page */
+    font-size: 1em; /* Consistent font size with the rest of the page */
     color: #333;
     line-height: 1.5em; /* Clear line spacing for readability */
 }
 
 .updates-list li {
-    font-size: 0.9em; /* Set updates header size */
+    font-size: 1em; /* Set updates header size */
     color:  #4e4e4e;
     margin-bottom: 10px; /* Space between list items for clarity */
 }
