@@ -42,6 +42,7 @@ a:hover {
     text-decoration: none;
 }
 h1 {
+    float: left;
     font-size: 1.5em;
     color: #999;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
