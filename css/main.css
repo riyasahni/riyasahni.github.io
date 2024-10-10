@@ -2,6 +2,9 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+div {
+    margin: 90px;
+}
 header {
     background: rgb(53, 41, 116);
 }
@@ -53,6 +56,11 @@ p {
     align-items: left;
 }
 footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.socials {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
