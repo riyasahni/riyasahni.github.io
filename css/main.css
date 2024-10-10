@@ -84,58 +84,72 @@ section {
     font-size: 1.5em; /* Adjust header size if needed */
     margin-bottom: 10px;
 }
-
-/* Publications section styling */
+/* Consistent font for publication content */
 .publications ul {
     padding-left: 0;
     list-style: none;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif'; /* Matches other sections */
 }
 
 .publications ul li {
-    margin-bottom: 30px; /* Add space between each publication entry */
+    margin-bottom: 40px; /* Increase space between publications */
 }
 
 .publication-entry {
     display: flex;
     align-items: flex-start;
+    border-bottom: 1px solid #ddd; /* Optional separator for better visual structure */
+    padding-bottom: 20px;
 }
 
+/* Make the thumbnail significantly larger */
 .paper-thumbnail {
-    width: 120px; /* Thumbnail size */
+    width: 180px; /* Increase the thumbnail size */
     height: auto;
-    margin-right: 15px; /* Spacing between image and content */
-    border-radius: 10px; /* Add rounded corners */
+    margin-right: 20px; /* Increase space between image and content */
+    border-radius: 10px; /* Rounded corners for cleaner look */
 }
 
 .publication-content {
     flex-grow: 1;
 }
 
-.publication-content b {
-    font-size: 0.9em;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+/* Title styling */
+.paper-title {
+    font-size: 1.5em; /* Slightly larger title */
     color: #333;
+    margin-bottom: 10px; /* Space between title and authors */
+    font-weight: bold;
 }
 
-.publication-content .paper-details {
+/* Author styling */
+.paper-authors {
+    font-size: 1.1em; /* Keep the font size smaller than the title */
+    color: #666;
+    margin-bottom: 10px; /* Add space between authors and details */
+}
+
+/* Paper details (e.g., arXiv, year) */
+.paper-details {
     font-style: italic;
     color: #888;
-    font-size: 0.9em;
+    font-size: 1em;
+    margin-bottom: 15px;
 }
 
+/* Abstract text */
 .publication-content p {
     margin: 10px 0;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    color: #999;
-    font-size: 0.9em;
-    line-height: 1.4em;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6em;
 }
 
+/* Publication links (PDF, Video, Code, etc.) */
 .publication-links a {
-    margin-right: 15px; /* Add spacing between links */
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    margin-right: 20px; /* Add spacing between links */
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1em;
     color: #1166bb;
 }
 
