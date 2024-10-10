@@ -104,9 +104,9 @@ section {
     margin-bottom: 20px;
 }
 
-/* Double the size of the thumbnail */
+/* Larger thumbnail */
 .paper-thumbnail {
-    width: 300px; /* Double the original thumbnail size */
+    width: 400px; /* Increase the thumbnail size for more visual emphasis */
     height: auto;
     margin-right: 20px; /* Spacing between image and content */
     border-radius: 10px; /* Rounded corners for cleaner look */
@@ -116,12 +116,12 @@ section {
     flex-grow: 1;
 }
 
-/* Title styling */
+/* Smaller and less chunky title */
 .paper-title {
-    font-size: 1.2em; /* Ensure title is smaller than the "Research" header */
+    font-size: 1.1em; /* Slightly smaller than before */
     color: #333;
     margin-bottom: 5px; /* Reduce space between title and authors */
-    font-weight: bold;
+    font-weight: normal; /* Remove boldness to make it look less chunky */
 }
 
 /* Research section header */
