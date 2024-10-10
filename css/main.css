@@ -22,7 +22,10 @@ nav ul, footer ul {
 nav {
     float: right;
 }
-
+img {
+    border-radius: 30%;
+    float: left;
+  }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
