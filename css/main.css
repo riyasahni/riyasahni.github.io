@@ -1,9 +1,9 @@
 body {
-    margin: 60px auto;
+    margin: 50px;
     width: 70%;
 }
 div {
-    margin: 90px;
+    margin: 50px;
 }
 header {
     background: rgb(53, 41, 116);
@@ -13,7 +13,7 @@ header h1 {
 }
 header h2 {
          font-weight:300;
-         margin:0;
+         margin: 50px;
          color: rgb(116, 130, 230);
 }
 nav ul, footer ul {
@@ -32,6 +32,10 @@ img {
     padding-right: 5%;
     padding-bottom: 5%;
     float: left;
+
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
   }
 nav ul li, footer ul li {
     display: inline;
@@ -64,6 +68,8 @@ ul.socials {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
+
 
 ul.posts { 
     margin: 20px auto 40px; 
