@@ -42,7 +42,8 @@ a:hover {
     text-decoration: none;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2em;
+    color: #999;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
