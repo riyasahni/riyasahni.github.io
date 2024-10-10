@@ -69,3 +69,6 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+section { 
+    display: block;
+}
