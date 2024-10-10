@@ -106,7 +106,7 @@ section {
 
 /* Larger thumbnail */
 .paper-thumbnail {
-    width: 400px; /* Increase the thumbnail size for more visual emphasis */
+    width: 250px; /* Increase the thumbnail size for more visual emphasis */
     height: auto;
     margin-right: 20px; /* Spacing between image and content */
     border-radius: 10px; /* Rounded corners for cleaner look */
@@ -127,7 +127,7 @@ section {
 /* Research section header */
 .research-section h1 {
     font-size: 1.5em; /* Set Research header size */
-    color: #333;
+    color:  #4e4e4e;
     margin-bottom: 20px;
 }
 
