@@ -23,7 +23,7 @@ nav {
     float: right;
 }
 img {
-    border-radius: 50%;  /* Updated to make the image circular */
+    border-radius: 20%;  /* Updated to make the image circular */
     width: 150px;  /* Adjust image size */
     height: auto;
     margin-right: 20px;  /* Spacing between image and text */
@@ -40,7 +40,7 @@ a:hover {
     text-decoration: none;
 }
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #999;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -81,6 +81,36 @@ section {
 /* Ensure the Research section header aligns to the left */
 .research-section h1 {
     text-align: left;
-    font-size: 1.8em; /* Adjust header size if needed */
+    font-size: 1.5em; /* Adjust header size if needed */
     margin-bottom: 10px;
+}
+
+/* Publications section */
+.publications {
+    margin-top: 20px;
+}
+
+.publications h2 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: left;
+}
+
+.publications ul {
+    padding-left: 20px;  /* Adds space between the list and the left edge */
+}
+
+.publications ul li {
+    font-size: 1em;
+    line-height: 1.8em;  /* Increases space between each publication */
+    color: #555;
+}
+
+.publications ul li a {
+    color: #1166bb;  /* Color for the [PDF] links */
+    text-decoration: none;
+}
+
+.publications ul li a:hover {
+    text-decoration: underline;
 }
