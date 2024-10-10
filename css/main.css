@@ -24,6 +24,8 @@ nav {
 }
 img {
     border-radius: 15%;
+    padding-left: none;
+    padding-top: none;
     padding-right: 5%;
     padding-bottom: 5%;
     float: left;
