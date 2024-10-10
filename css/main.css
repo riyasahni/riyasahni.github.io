@@ -118,8 +118,8 @@ section {
 
 /* Smaller and less chunky title */
 .paper-title {
-    font-size: 1.1em; /* Slightly smaller than before */
-    color: #333;
+    font-size: 1em; /* Slightly smaller than before */
+    color: #4e4e4e;
     margin-bottom: 5px; /* Reduce space between title and authors */
     font-weight: normal; /* Remove boldness to make it look less chunky */
 }
@@ -133,7 +133,7 @@ section {
 
 /* Author styling */
 .paper-authors {
-    font-size: 1em; /* Keep the font size smaller than the title */
+    font-size: 0.9em; /* Keep the font size smaller than the title */
     color: #666;
     margin-bottom: 5px; /* Reduce space between authors and details */
 }
