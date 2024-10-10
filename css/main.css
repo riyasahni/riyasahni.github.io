@@ -84,6 +84,7 @@ section {
     font-size: 1.5em; /* Adjust header size if needed */
     margin-bottom: 10px;
 }
+
 /* Consistent font for publication content */
 .publications ul {
     padding-left: 0;
@@ -92,21 +93,22 @@ section {
 }
 
 .publications ul li {
-    margin-bottom: 40px; /* Increase space between publications */
+    margin-bottom: 20px; /* Reduce space between publication entries for a more compact layout */
 }
 
 .publication-entry {
     display: flex;
     align-items: flex-start;
     border-bottom: 1px solid #ddd; /* Optional separator for better visual structure */
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* Make the thumbnail significantly larger */
+/* Double the size of the thumbnail */
 .paper-thumbnail {
-    width: 180px; /* Increase the thumbnail size */
+    width: 300px; /* Double the original thumbnail size */
     height: auto;
-    margin-right: 20px; /* Increase space between image and content */
+    margin-right: 20px; /* Spacing between image and content */
     border-radius: 10px; /* Rounded corners for cleaner look */
 }
 
@@ -116,40 +118,47 @@ section {
 
 /* Title styling */
 .paper-title {
-    font-size: 1.5em; /* Slightly larger title */
+    font-size: 1.2em; /* Ensure title is smaller than the "Research" header */
     color: #333;
-    margin-bottom: 10px; /* Space between title and authors */
+    margin-bottom: 5px; /* Reduce space between title and authors */
     font-weight: bold;
+}
+
+/* Research section header */
+.research-section h1 {
+    font-size: 1.5em; /* Set Research header size */
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* Author styling */
 .paper-authors {
-    font-size: 1.1em; /* Keep the font size smaller than the title */
+    font-size: 1em; /* Keep the font size smaller than the title */
     color: #666;
-    margin-bottom: 10px; /* Add space between authors and details */
+    margin-bottom: 5px; /* Reduce space between authors and details */
 }
 
 /* Paper details (e.g., arXiv, year) */
 .paper-details {
     font-style: italic;
     color: #888;
-    font-size: 1em;
-    margin-bottom: 15px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 /* Abstract text */
 .publication-content p {
     margin: 10px 0;
     color: #555;
-    font-size: 1em;
-    line-height: 1.6em;
+    font-size: 0.9em;
+    line-height: 1.4em;
 }
 
 /* Publication links (PDF, Video, Code, etc.) */
 .publication-links a {
-    margin-right: 20px; /* Add spacing between links */
+    margin-right: 15px; /* Add spacing between links */
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.9em;
     color: #1166bb;
 }
 
