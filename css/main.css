@@ -23,7 +23,8 @@ nav {
     float: right;
 }
 img {
-    border-radius: 20%;
+    border-radius: 15%;
+    padding: 20%;
     float: left;
   }
 nav ul li, footer ul li {
