@@ -44,8 +44,9 @@ h1 {
 p {
     font-size: 1em;
     line-height: 1em;
-    font-family:'Georgia', 'Arial', 'Merriweather';
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     color: #333;
+    align-items: left;
 }
 footer {
     border-top: 1px solid #d5d5d5;
