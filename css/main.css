@@ -85,32 +85,57 @@ section {
     margin-bottom: 10px;
 }
 
-/* Publications section */
-.publications {
-    margin-top: 20px;
-}
-
-.publications h2 {
-    font-size: 1.5em;
-    color: #333;
-    text-align: left;
-}
-
+/* Publications section styling */
 .publications ul {
-    padding-left: 20px;  /* Adds space between the list and the left edge */
+    padding-left: 0;
+    list-style: none;
 }
 
 .publications ul li {
-    font-size: 1em;
-    line-height: 1.8em;  /* Increases space between each publication */
+    margin-bottom: 30px; /* Add space between each publication entry */
+}
+
+.publication-entry {
+    display: flex;
+    align-items: flex-start;
+}
+
+.paper-thumbnail {
+    width: 80px; /* Thumbnail size */
+    height: auto;
+    margin-right: 15px; /* Spacing between image and content */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.publication-content {
+    flex-grow: 1;
+}
+
+.publication-content b {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.publication-content .paper-details {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.publication-content p {
+    margin: 10px 0;
     color: #555;
+    font-size: 0.9em;
+    line-height: 1.4em;
 }
 
-.publications ul li a {
-    color: #1166bb;  /* Color for the [PDF] links */
+.publication-links a {
+    margin-right: 15px; /* Add spacing between links */
     text-decoration: none;
+    font-size: 0.9em;
+    color: #1166bb;
 }
 
-.publications ul li a:hover {
+.publication-links a:hover {
     text-decoration: underline;
 }
