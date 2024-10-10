@@ -165,3 +165,31 @@ section {
 .publication-links a:hover {
     text-decoration: underline;
 }
+
+/* Styling for the Updates and Events section */
+.updates-events-section {
+    margin-top: 40px; /* Adds space between the Research section and Updates section */
+}
+
+/* Heading for the Updates and Events section */
+.updates-events-section h1 {
+    font-size: 1.5em; /* Same size as the Research heading */
+    color: #333; /* Consistent text color */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif'; /* Consistent font */
+}
+
+/* Styling for the updates list */
+.updates-list {
+    padding-left: 20px; /* Indentation for bullet points */
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif'; /* Matches other text on the page */
+    font-size: 1em; /* Consistent font size with the rest of the page */
+    color: #333;
+    line-height: 1.5em; /* Clear line spacing for readability */
+}
+
+.updates-list li {
+    font-size: 1.5em; /* Set updates header size */
+    color:  #4e4e4e;
+    margin-bottom: 10px; /* Space between list items for clarity */
+}
