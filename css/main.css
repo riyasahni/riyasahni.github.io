@@ -101,7 +101,7 @@ section {
 }
 
 .paper-thumbnail {
-    width: 80px; /* Thumbnail size */
+    width: 120px; /* Thumbnail size */
     height: auto;
     margin-right: 15px; /* Spacing between image and content */
     border-radius: 10px; /* Add rounded corners */
@@ -112,7 +112,8 @@ section {
 }
 
 .publication-content b {
-    font-size: 1.2em;
+    font-size: 0.9em;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     color: #333;
 }
 
@@ -124,13 +125,15 @@ section {
 
 .publication-content p {
     margin: 10px 0;
-    color: #555;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #999;
     font-size: 0.9em;
     line-height: 1.4em;
 }
 
 .publication-links a {
     margin-right: 15px; /* Add spacing between links */
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     text-decoration: none;
     font-size: 0.9em;
     color: #1166bb;
