@@ -10,7 +10,7 @@ header h1 {
 }
 header h2 {
          font-weight:300;
-         margin: 0px;
+         margin: 20px;
          color: rgb(116, 130, 230);
 }
 nav ul, footer ul {
@@ -42,7 +42,6 @@ a:hover {
     text-decoration: none;
 }
 h1 {
-    float: left;
     font-size: 1.5em;
     color: #999;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
