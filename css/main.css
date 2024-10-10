@@ -1,6 +1,6 @@
 body {
     margin: 50px;
-    width: 70%;
+    width: 60%;
 }
 div {
     margin: 50px;
@@ -33,8 +33,8 @@ img {
     padding-bottom: 5%;
     float: left;
 
-    width:  100px;
-    height: 100px;
+    width:  50px;
+    height: 50px;
     object-fit: cover;
   }
 nav ul li, footer ul li {
@@ -65,8 +65,7 @@ footer {
 }
 
 ul.socials {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    border-bottom: 1px solid #d5d5d5;
 }
 
 
