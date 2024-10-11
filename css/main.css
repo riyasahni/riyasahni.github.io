@@ -197,8 +197,8 @@ section {
 .social-bar {
 	margin-top: 20px;
 	display: flex;
-	justify-content: center;
-	gap: 15px; /* Spacing between icons */
+	justify-content: left;
+	gap: 10px; /* Spacing between icons */
 }
 
 .social-bar a img {
