@@ -19,6 +19,10 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+
+.publication-links a:hover {
+    text-decoration: underline;
+}
 nav {
     float: right;
 }
@@ -28,11 +32,16 @@ img {
     height: auto;
     margin-right: 20px;  /* Spacing between image and text */
 }
-nav ul li, footer ul li {
+nav ul li a, footer ul li {
     display: inline;
     margin-right: 20px;
     font-size: 1.5em;
+    transition: color 0.3s ease; /* Smooth transition */
 }
+nav ul li a:hover {
+    color: #ff9500; /* Change to any color you prefer on hover */
+}
+
 a {
     text-decoration: none;
     color: #999;
@@ -44,6 +53,11 @@ h1 {
     font-size: 3em;
     color: #999;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+h1 a:hover {
+    color: #ff9500; /* Change to any color you prefer on hover */
 }
 p {
     font-size: 1em;
