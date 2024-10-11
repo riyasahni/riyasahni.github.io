@@ -193,3 +193,20 @@ section {
     color:  #4e4e4e;
     margin-bottom: 10px; /* Space between list items for clarity */
 }
+/* Social Media Bar Styling */
+.social-bar {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 15px; /* Spacing between icons */
+}
+
+.social-bar a img {
+	width: 30px;
+	height: 30px;
+	transition: transform 0.2s ease;
+}
+
+.social-bar a img:hover {
+	transform: scale(1.2); /* Enlarge icon on hover */
+}
