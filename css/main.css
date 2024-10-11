@@ -15,6 +15,7 @@ header h2 {
 }
 nav ul, footer ul {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 2em;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -23,8 +24,8 @@ nav {
     float: right;
 }
 img {
-    border-radius: 5px;  /* Updated to make the image circular */
-    width: 250;  /* Adjust image size */
+    border-radius: 15px;  /* Updated to make the image circular */
+    width: 275;  /* Adjust image size */
     height: auto;
     margin-right: 20px;  /* Spacing between image and text */
 }
@@ -233,7 +234,7 @@ section {
 .profile img {
     width: 200px;
     height: auto;
-    border-radius: 0px;
+    border-radius: 10%;
     object-fit: cover;
     margin-bottom: 5px; /* Small gap between image and social bar */
 }
