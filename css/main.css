@@ -23,7 +23,7 @@ nav {
     float: right;
 }
 img {
-    border-radius: 10px;  /* Updated to make the image circular */
+    border-radius: 5px;  /* Updated to make the image circular */
     width: 250;  /* Adjust image size */
     height: auto;
     margin-right: 20px;  /* Spacing between image and text */
@@ -40,7 +40,7 @@ a:hover {
     text-decoration: none;
 }
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     color: #999;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -108,7 +108,8 @@ section {
 /* Larger thumbnail */
 .paper-thumbnail {
     width: 250px; /* Increase the thumbnail size for more visual emphasis */
-    height: auto;
+    height: 200;
+    object-fit: cover;
     margin-right: 20px; /* Spacing between image and content */
     border-radius: 10px; /* Rounded corners for cleaner look */
 }
@@ -232,7 +233,7 @@ section {
 .profile img {
     width: 200px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 0px;
     object-fit: cover;
     margin-bottom: 5px; /* Small gap between image and social bar */
 }
@@ -240,7 +241,7 @@ section {
 .profile figcaption {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Spacing between social icons */
+    gap: 9px; /* Spacing between social icons */
     margin-top: 0; /* No extra margin for the figcaption */
 }
 
