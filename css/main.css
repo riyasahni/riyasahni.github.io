@@ -73,11 +73,7 @@ section {
     display: flex;
     align-items: flex-start;
 }
-.header-container img {
-	width: 200px;
-	border-radius: 20px; /* Rounded edges, but not circular */
-	margin-right: 20px; /* Spacing between the image and the text */
-}
+
 .blurb {
     flex-grow: 1;
     text-align: left;
@@ -207,8 +203,8 @@ section {
 }
 
 .social-bar a img {
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	transition: transform 0.2s ease;
 }
 
@@ -222,6 +218,38 @@ section {
 }
 
 .header-container img {
-	width: 200px;
-	border-radius: 20%; /* Make the profile picture circular */
+	width: 250px;
+	border-radius: 15%; /* Make the profile picture circular */
+}
+
+/* Profile image and caption (social media) styling */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 5px; /* Small gap between image and social bar */
+}
+
+.profile figcaption {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spacing between social icons */
+    margin-top: 0; /* No extra margin for the figcaption */
+}
+
+.profile figcaption a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.profile figcaption a img:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
 }
