@@ -23,8 +23,8 @@ nav {
     float: right;
 }
 img {
-    border-radius: 20%;  /* Updated to make the image circular */
-    width: 200px;  /* Adjust image size */
+    border-radius: 10px;  /* Updated to make the image circular */
+    width: 250;  /* Adjust image size */
     height: auto;
     margin-right: 20px;  /* Spacing between image and text */
 }
