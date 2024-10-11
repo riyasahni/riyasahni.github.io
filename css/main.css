@@ -196,19 +196,19 @@ section {
 .updates-list li {
     font-size: 1em; /* Set updates header size */
     color:  #4e4e4e;
-    margin-bottom: 10px; /* Space between list items for clarity */
+    margin-bottom: 8px; /* Space between list items for clarity */
 }
 /* Social Media Bar Styling */
 .social-bar {
-	margin-top: 20px;
+	margin-top: 0px;
 	display: flex;
 	justify-content: left;
-	gap: 10px; /* Spacing between icons */
+	gap: 8px; /* Spacing between icons */
 }
 
 .social-bar a img {
-	width: 30px;
-	height: 30px;
+	width: 15px;
+	height: 15px;
 	transition: transform 0.2s ease;
 }
 
@@ -222,6 +222,6 @@ section {
 }
 
 .header-container img {
-	width: 150px;
+	width: 200px;
 	border-radius: 20%; /* Make the profile picture circular */
 }
