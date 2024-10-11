@@ -210,3 +210,13 @@ section {
 .social-bar a img:hover {
 	transform: scale(1.2); /* Enlarge icon on hover */
 }
+
+/* Additional styling for other elements */
+.header-container {
+	text-align: center; /* Ensure the profile section is centered */
+}
+
+.header-container img {
+	width: 150px;
+	border-radius: 50%; /* Make the profile picture circular */
+}
