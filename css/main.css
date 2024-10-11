@@ -127,7 +127,7 @@ section {
     height: 200px;
     object-fit: contain;
     margin-right: 20px; /* Spacing between image and content */
-    border-radius: 10px; /* Rounded corners for cleaner look */
+    border-radius: 10%; /* Rounded corners for cleaner look */
 }
 
 .publication-content {
@@ -213,7 +213,7 @@ section {
 }
 /* Social Media Bar Styling */
 .social-bar {
-	margin-top: 0px;
+	margin-top: 2px;
 	display: flex;
 	justify-content: left;
 	gap: 8px; /* Spacing between icons */
@@ -247,7 +247,7 @@ section {
 }
 
 .profile img {
-    width: 200px;
+    width: 250px;
     height: auto;
     border-radius: 10%;
     object-fit: cover;
