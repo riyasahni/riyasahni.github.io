@@ -32,6 +32,7 @@ img {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    font-size: 2em;
 }
 a {
     text-decoration: none;
@@ -59,6 +60,7 @@ ul.socials {
     border-bottom: 1px solid #d5d5d5;
 }
 ul.posts { 
+    padding-top: 5%;
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
@@ -177,7 +179,7 @@ section {
 /* Heading for the Updates and Events section */
 .updates-events-section h1 {
     font-size: 1.5em; /* Same size as the Research heading */
-    color: #333; /* Consistent text color */
+    color: #4e4e4e; /* Consistent text color */
     margin-bottom: 20px; /* Space below the heading */
     font-family: 'Helvetica', 'Arial', 'Sans-Serif'; /* Consistent font */
 }
