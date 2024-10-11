@@ -71,11 +71,16 @@ section {
 /* New styling for header layout */
 .header-container {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-start;
+}
+.header-container img {
+	width: 200px;
+	border-radius: 15px; /* Rounded edges, but not circular */
+	margin-right: 20px; /* Spacing between the image and the text */
 }
 .blurb {
     flex-grow: 1;
+    text-align: left;
 }
 
 /* Ensure the Research section header aligns to the left */
