@@ -88,15 +88,18 @@ section {
 
 /* New styling for header layout */
 .header-container {
-    display: flex;
-    align-items: flex-start;
+    display: block;
+    /*align-items: flex-start;*/
     flex-direction: column;
     padding: 20px;
+    float:left;
+    object-fit: cover;
 }
 
 .blurb {
     flex-grow: 1;
     text-align: left;
+    overflow: hidden;
 }
 
 /* Ensure the Research section header aligns to the left */
