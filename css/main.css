@@ -1,6 +1,8 @@
 body {
     margin: 0px auto;
     width: 55%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 header {
     background: rgb(53, 41, 116);
@@ -88,6 +90,8 @@ section {
 .header-container {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .blurb {
@@ -187,6 +191,7 @@ section {
 /* Styling for the Updates and Events section */
 .updates-events-section {
     margin-top: 40px; /* Adds space between the Research section and Updates section */
+    text-align: left;
 }
 
 /* Heading for the Updates and Events section */
@@ -215,7 +220,7 @@ section {
 .social-bar {
 	margin-top: 2px;
 	display: flex;
-	justify-content: left;
+	justify-content: flex-start;
 	gap: 5px; /* Spacing between icons */
 }
 
@@ -235,7 +240,9 @@ section {
 }
 
 .header-container img {
-	width: 250px;
+	width: 100%;
+    max-width: 250px;
+    height: auto;
 	border-radius: 15%; /* Make the profile picture circular */
 }
 
@@ -269,4 +276,37 @@ section {
 
 .profile figcaption a img:hover {
     transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+/* Responsive Media Queries */
+
+/* For small devices (phones) */
+@media (max-width: 600px) {
+    .header-container {
+        align-items: center; /* Center the content on smaller screens */
+    }
+
+    .blurb {
+        text-align: center; /* Center text for better readability */
+    }
+
+    .social-bar {
+        justify-content: center; /* Center the social icons */
+    }
+}
+
+/* For tablets or medium-sized screens */
+@media (min-width: 600px) and (max-width: 1200px) {
+    .header-container {
+        flex-direction: row; /* Arrange image and text side by side on larger screens */
+        justify-content: space-between;
+    }
+
+    .blurb {
+        max-width: 600px; /* Limit the width of text for readability */
+    }
+
+    .social-bar {
+        justify-content: flex-start; /* Left-align the icons */
+    }
 }
