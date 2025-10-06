@@ -100,8 +100,22 @@ footer {
 .custom-footer {
     margin-top: 60px;
     padding: 30px 0;
-    text-align: center;
     border-top: 1px solid #d5d5d5;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-last-updated {
+    text-align: left;
+    color: #666;
+    font-size: 0.85em;
+    margin: 0;
+}
+
+.footer-center {
+    text-align: center;
 }
 
 .footer-quote {
@@ -110,13 +124,26 @@ footer {
     font-size: 0.95em;
     line-height: 1.6em;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .footer-emoji {
     font-size: 2em;
     margin-top: 15px;
     margin-bottom: 0;
+}
+
+.back-to-top {
+    text-align: right;
+    color: #4e4e4e;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+.back-to-top:hover {
+    color: #ff9500;
 }
 ul.socials {
     border-bottom: 1px solid #d5d5d5;
