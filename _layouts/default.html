@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 	<html>
 		<head>
+			<!-- Google tag (gtag.js) -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PER4C393L"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'G-1PER4C393L');
+			</script>
+			
 			<title>{{ page.title }}</title>
 			<link rel="icon" href="/img/lion_favicon.png">
 			<!-- link to main stylesheet -->
@@ -10,123 +20,93 @@
 		<body>
 			<nav>
 	    		<ul>
-	        		<li><a href="/blog">✨Advice Column✨</a></li>
+	        		<li><a href="#research">Research</a> | <a href="#updates">Updates</a> | <a href="/blog">Advice Column</a></li>
 	    		</ul>
 			</nav>
+			
 			<h1>
 				<a href="/">Riya Sahni</a>
 			</h1>
-
 			
 			<!-- Profile Section with Image and Blurb -->
 			<section class="header-container">
-				<figure class="profile">
-					<img src="/img/image0.jpeg" alt="Profile Picture">
-					<figcaption class="social-bar">
-						<!-- Social Media Bar with Favicons -->
-						<a href="mailto:riya.sahni@cs.columbia.edu" title="Email" target="_blank">
-							<img src="/img/favicons/email.png" alt="Email">
-						</a>
-						<a href="https://github.com/riyasahni" title="GitHub" target="_blank">
-							<img src="/img/favicons/github.png" alt="GitHub">
-						</a>
-						<a href="https://linkedin.com/in/riya-sahni" title="LinkedIn" target="_blank">
-							<img src="/img/favicons/linkedin.png" alt="LinkedIn">
-						</a>
-						<a href="https://scholar.google.com/citations?hl=en&user=2lIl8qUAAAAJ" title="Google Scholar" target="_blank">
-							<img src="/img/favicons/google_scholar.png" alt="Google Scholar">
-						</a>
-						<a href="https://google.com" title="Curriculum Vitae" target="_blank">
-							<img src="/img/favicons/cv.png" alt="CV">
-						</a>
-					</figcaption>
-				</figure>
+				<div class="profile-left">
+					<figure class="profile">
+						<img src="/img/image0.jpeg" alt="Profile Picture">
+						<figcaption class="social-bar">
+							<!-- Social Media Bar with Favicons -->
+							<a href="mailto:riya.sahni@cs.columbia.edu" title="Email" target="_blank">
+								<img src="/img/favicons/email.png" alt="Email">
+							</a>
+							<a href="https://github.com/riyasahni" title="GitHub" target="_blank">
+								<img src="/img/favicons/github.png" alt="GitHub">
+							</a>
+							<a href="https://linkedin.com/in/riya-sahni" title="LinkedIn" target="_blank">
+								<img src="/img/favicons/linkedin.png" alt="LinkedIn">
+							</a>
+							<a href="https://scholar.google.com/citations?hl=en&user=2lIl8qUAAAAJ" title="Google Scholar" target="_blank">
+								<img src="/img/favicons/google_scholar.png" alt="Google Scholar">
+							</a>
+							<a href="https://google.com" title="Curriculum Vitae" target="_blank">
+								<img src="/img/favicons/cv.png" alt="CV">
+							</a>
+						</figcaption>
+					</figure>
+				</div>
 				
-				<div class="blurb">
-					<p>Hi! I am a first year Computer Science Ph.D. candidate at Columbia University, advised by <a href="https://www.cs.columbia.edu/~chilton/chilton.html">Dr. Lydia Chilton</a> in the Computational Design Lab.
-						<br/> 
-						<br/> 
-					   I am a proud member of <a href="https://columbiahci.github.io/">🦁 Columbia HCI </a>, and I am grateful to be supported by the National Science Foundation Graduate Research Fellowship.
-					   <br/>
-					   <br/>
-					   Prior to joining Columbia, I worked at Microsoft for 1 year as a Customer Success Account Manager in the Financial Services Industry, out of the Times Square office in New York City. 
-					   <br/>
-					   <br/>
-					   I graduated from the University of Chicago in 2023 with a B.S. in Computer Science and B.A. in Economics, during which I was advised by Dr. Marshini Chetty and Dr. Sarah Sebo.
-					</p>					
+				<div class="blurb-right">
+					{% capture blurb_content %}{% include_relative _data/blurb.md %}{% endcapture %}
+					{{ blurb_content | newline_to_br | markdownify }}
 				</div>
 			</section>
 
 
 			<!-- Research Section -->
-			<section class="research-section">
+			<section id="research" class="research-section">
 				<h1>Research</h1>
-				<p>
-					I am a human-computer and human-AI researcher interested in building AI tools that augment productive learning behaviors and understanding how to improve large-scale AI adoption.
-				</p>
-
 				 <!-- Publications Feed -->
 				 <section class="publications">
 					<ul>
-						<!-- Publication #1 (DynEx): -->
+						{% for pub in site.data.publications %}
 						<li>
 							<div class="publication-entry">
-								<img src="/papers/dynex_thumbnail.jpg" alt="Paper 1 Thumbnail" class="paper-thumbnail">
+								<img src="{{ pub.thumbnail }}" alt="{{ pub.title }} Thumbnail" class="paper-thumbnail">
 								<div class="publication-content">
-									<div class="paper-title"><b>DynEx: Dynamic Code Synthesis with Structured Design Exploration for Accelerated Exploratory Programming</b></div>
+									<div class="paper-title"><b>{{ pub.title }}</b></div>
 									<div class="paper-authors">
-										Jenny Ma, Karthik Sreedhar, Vivian Liu, Sitong Wang, Pedro Alejandro Perez, <b> Riya Sahni </b>, Lydia B. Chilton
+										{{ pub.authors | replace: "Riya Sahni", "<b>Riya Sahni</b>" }}
 									</div>
-									<span class="paper-details">Under Submission</span>
+									<span class="paper-details">{{ pub.venue }}</span>
+									{% if pub.pdf or pub.video or pub.code or pub.website or pub.acm or pub.news %}
 									<div class="publication-links">
-										<a href="\papers\dynex_paper.pdf" target="_blank">[PDF]</a>
-										<a href="https://www.youtube.com/watch?v=ZY5WNgjo7as" target="_blank">[Video]</a>
-										<a href="https://arxiv.org/abs/2410.00400" target="_blank">[Arxiv]</a>
+										{% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank">[PDF]</a>{% endif %}
+										{% if pub.video %}<a href="{{ pub.video }}" target="_blank">[Video]</a>{% endif %}
+										{% if pub.acm %}<a href="{{ pub.acm }}" target="_blank">[ACM]</a>{% endif %}
+										{% if pub.code %}<a href="{{ pub.code }}" target="_blank">[Code]</a>{% endif %}
+										{% if pub.website %}<a href="{{ pub.website }}" target="_blank">[Website]</a>{% endif %}
+										{% if pub.news %}<a href="{{ pub.news }}" target="_blank">[News]</a>{% endif %}
 									</div>
+									{% endif %}
 								</div>
 							</div>
 						</li>
-						<!-- Publication #2 (Netflix User Study): -->
-
-						<li>
-							<div class="publication-entry">
-								<img src="/img/coming_soon.jpg" alt="Paper 2 Coming Soon Thumbnail" class="paper-thumbnail">
-								<div class="publication-content">
-									<div class="paper-title"><b>*Preprint coming soon*</b></div>
-									<div class="paper-authors">
-										ANONYMOUS AUTHOR(S)
-									</div>
-									<span class="paper-details">CSCW 2025</span>
-									<div class="publication-links">
-										<!-- ADD ONCE BRENNAN HAS POSTED ON HIS WEBSITE -->
-									</div>
-								</div>
-							</div>
-						</li>
-						<!-- Add more publications in the same format -->
-
+						{% endfor %}
 					</ul>
 				</section>
 			</section>
 
-			<section class="updates-events-section">
+			<section id="updates" class="updates-events-section">
 				<h1>Updates and Events</h1>
 				<ul class="updates-list">
-					<li><b> 10/2024:</b> Had a paper accepted to CSCW 2025! Preprint coming soon... </li>
-					<li><b> 09/2024:</b> Started my Ph.D. in Computer Science at Columbia University!</li>
-					<li><b> 08/2024:</b> Completed 1 year at Microsoft!</li>
-					<li><b> 04/2024:</b> Awarded the National Science Foundation Graduate Research Fellowship!</li>
-					<li><b> 06/2023:</b> Graduated from the University of Chicago!</li>
-					<!-- Add more updates as needed -->
+					{% for update in site.data.updates %}
+					<li><b>{{ update.date }}:</b> {{ update.text }}</li>
+					{% endfor %}
 				</ul>
 			</section>
 			
-		<!-- <footer>
-	    		<ul>
-	        		<li><a>[first name].[last name]@cs.columbia.edu | </a></li>
-	        		<li><a href="https://github.com/riyasahni">github.com/riyasahni |</a></li>
-					<li><a href="https://www.linkedin.com/in/riya-sahni">LinkedIn |</a></li>
-				</ul>
-			</footer> -->
+			<footer class="custom-footer">
+				<p class="footer-quote">"The woods are lovely, dark and deep, but I have promises to keep, and miles to go before I sleep, and miles to go before I sleep."</p>
+				<p class="footer-emoji">🌔</p>
+			</footer>
 		</body>
 	</html>

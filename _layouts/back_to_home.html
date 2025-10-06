@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 	<html>
 		<head>
+			<!-- Google tag (gtag.js) -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PER4C393L"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'G-1PER4C393L');
+			</script>
+			
 			<title>{{ page.title }}</title>
+			<link rel="icon" href="/img/lion_favicon.png">
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/blog">Column</a></li>
-	    		</ul>
-				<a href="/">← Back Home</a>
+			<nav class="blog-nav">
+				<a href="/" class="back-home">← Back Home</a>
+				<a href="/blog" class="column-link">Column</a>
 			</nav>
 		
 			<div class="container">
@@ -18,11 +28,9 @@
 			{{ content }}
 			
 			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a>email: [first name] dot [last name] at cs dot columbia dot edu </a></li>
-	        		<li><a href="https://github.com/riyasahni">github.com/riyasahni</a></li>
-				</ul>
+			
+			<footer class="blog-footer">
+				<p>riya.sahni@cs.columbia.edu</p>
 			</footer>
 		</body>
 	</html>

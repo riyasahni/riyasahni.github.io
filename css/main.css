@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px auto;
-    width: 55%;
+    width: 65%;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
@@ -29,19 +33,30 @@ nav {
     float: right;
 }
 img {
-    border-radius: 15px;  /* Updated to make the image circular */
-    width: 275;  /* Adjust image size */
+    border-radius: 15px;
+    width: 275;
     height: auto;
-    margin-right: 20px;  /* Spacing between image and text */
+    margin-right: 20px;
 }
-nav ul li a, footer ul li {
+nav ul li {
+    display: inline;
+    font-size: 1em;
+    color: #4e4e4e;
+}
+
+nav ul li a {
+    color: #4e4e4e;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff9500;
+}
+
+footer ul li {
     display: inline;
     margin-right: 20px;
-    font-size: 1.5em;
-    transition: color 0.3s ease; /* Smooth transition */
-}
-nav ul li a:hover {
-    color: #ff9500; /* Change to any color you prefer on hover */
 }
 
 a {
@@ -52,123 +67,297 @@ a:hover {
     text-decoration: none;
 }
 h1 {
-    font-size: 3em;
-    color: #999;
+    font-size: 2em;
+    color: #4e4e4e;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    transition: color 0.3s ease; /* Smooth transition */
+    transition: color 0.3s ease;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 a {
+    color: #4e4e4e;
+    text-decoration: none;
 }
 
 h1 a:hover {
-    color: #ff9500; /* Change to any color you prefer on hover */
+    color: #ff9500;
 }
 p {
     font-size: 1em;
-    line-height: 1.5em;  /* Adjusted line height for better readability */
+    line-height: 1.5em;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     color: #333;
+    max-width: none;
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
+/* Custom footer with quote */
+.custom-footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #d5d5d5;
+}
+
+.footer-quote {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.6em;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.footer-emoji {
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
 ul.socials {
     border-bottom: 1px solid #d5d5d5;
 }
-ul.posts { 
-    padding-top: 5%;
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+/* Blog/Advice Column styling */
+.blog-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
 }
+
+.blog-nav a {
+    color: #4e4e4e;
+    text-decoration: none;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
+    transition: color 0.3s ease;
+    padding: 0 10px;
+}
+
+.blog-nav a:hover {
+    color: #ff9500;
+}
+
+.back-home {
+    font-weight: normal;
+    margin-right: auto;
+}
+
+.column-link {
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+ul.posts { 
+    padding-left: 0;
+    margin: 30px 0 40px 0; 
+    font-size: 1em;
+    list-style: none;
+}
+
 ul.posts li {
     list-style: none;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+ul.posts li:last-child {
+    border-bottom: none;
+}
+
+ul.posts li span {
+    color: #4e4e4e;
+    font-weight: 600;
+    margin-right: 15px;
+    font-size: 0.95em;
+}
+
+ul.posts li a {
+    color: #4e4e4e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.05em;
+}
+
+ul.posts li a:hover {
+    color: #1166bb;
+    text-decoration: underline;
+}
+
+.blog-footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #d5d5d5;
+}
+
+.blog-footer p {
+    color: #666;
+    font-size: 0.95em;
+    margin: 0;
 }
 section {
     display: block;
 }
 
-/* New styling for header layout */
+/* Profile section layout - photo left, blurb right */
 .header-container {
-    display: block;
-    /*align-items: flex-start;*/
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.profile-left {
+    flex-shrink: 0;
+    width: 250px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.blurb-right {
+    flex: 1;
+    text-align: justify;
+    min-width: 0;
+}
+
+.blurb-right p {
+    margin: 0;
+    line-height: 1.45em;
+    width: 100%;
+    max-width: none;
+    text-align: justify;
+}
+
+/* Profile image and social icons */
+.profile {
+    display: flex;
     flex-direction: column;
-    padding: 20px;
-    float:left;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.profile img {
+    width: 250px;
+    height: auto;
+    border-radius: 10%;
     object-fit: cover;
+    margin-bottom: 10px;
+    margin-left: 0;
 }
 
-.blurb {
-    flex-grow: 1;
+.profile figcaption {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 0;
+    width: 250px;
+}
+
+.profile figcaption a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease;
+}
+
+.profile figcaption a img:hover {
+    transform: scale(1.2);
+}
+
+/* Research section - left-aligned */
+.research-section {
     text-align: left;
-    overflow: hidden;
+    margin-bottom: 40px;
 }
 
-/* Ensure the Research section header aligns to the left */
 .research-section h1 {
     text-align: left;
-    font-size: 1.5em; /* Adjust header size if needed */
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #4e4e4e;
+    margin-bottom: 20px;
 }
 
-/* Consistent font for publication content */
+/* Publications list */
 .publications ul {
     padding-left: 0;
     list-style: none;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif'; /* Matches other sections */
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 .publications ul li {
-    margin-bottom: 20px; /* Reduce space between publication entries for a more compact layout */
+    margin-bottom: 35px;
 }
 
+/* Publication entry using CSS Grid for clean alignment */
 .publication-entry {
-    display: flex;
-    align-items: flex-start;
-    border-bottom: 1px solid #ddd; /* Optional separator for better visual structure */
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 25px;
+    align-items: start;
 }
 
-/* Larger thumbnail */
+/* Paper thumbnail */
 .paper-thumbnail {
-    width: 200px; /* Increase the thumbnail size for more visual emphasis */
-    height: 200px;
+    width: 200px;
+    height: auto;
     object-fit: contain;
-    margin-right: 20px; /* Spacing between image and content */
-    border-radius: 10%; /* Rounded corners for cleaner look */
+    border-radius: 8%;
+    margin-top: 0;
+    padding-top: 0;
 }
 
+/* Publication content */
 .publication-content {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 0;
+    margin-top: 0;
+    align-self: start;
 }
 
-/* Smaller and less chunky title */
+/* Paper title */
 .paper-title {
-    font-size: 1em; /* Slightly smaller than before */
+    font-size: 1em;
     color: #4e4e4e;
-    margin-bottom: 5px; /* Reduce space between title and authors */
-    font-weight: normal; /* Remove boldness to make it look less chunky */
-}
-
-/* Research section header */
-.research-section h1 {
-    font-size: 1.5em; /* Set Research header size */
-    color:  #4e4e4e;
-    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
 }
 
 /* Author styling */
 .paper-authors {
-    font-size: 0.9em; /* Keep the font size smaller than the title */
+    font-size: 0.95em;
     color: #666;
-    margin-bottom: 5px; /* Reduce space between authors and details */
+    line-height: 1.4em;
+    margin: 0;
 }
 
-/* Paper details (e.g., arXiv, year) */
+/* Paper details (venue, year) */
 .paper-details {
     font-style: italic;
     color: #888;
-    font-size: 0.9em;
-    margin-bottom: 10px;
+    font-size: 0.95em;
+    margin: 0;
 }
 
 /* Abstract text */
@@ -179,137 +368,140 @@ section {
     line-height: 1.4em;
 }
 
-/* Publication links (PDF, Video, Code, etc.) */
+/* Publication links */
+.publication-links {
+    margin-top: 1px;
+}
+
 .publication-links a {
-    margin-right: 15px; /* Add spacing between links */
+    margin-right: 5px;
     text-decoration: none;
     font-size: 0.9em;
-    color: #1166bb;
+    color: #4e4e4e;
 }
 
 .publication-links a:hover {
     text-decoration: underline;
+    color: #1166bb;
 }
 
-/* Styling for the Updates and Events section */
+/* Updates and Events section - left-aligned */
 .updates-events-section {
-    margin-top: 40px; /* Adds space between the Research section and Updates section */
     text-align: left;
+    margin-top: 40px;
+    position: relative;
 }
 
-/* Heading for the Updates and Events section */
 .updates-events-section h1 {
-    font-size: 1.5em; /* Same size as the Research heading */
-    color: #4e4e4e; /* Consistent text color */
-    margin-bottom: 20px; /* Space below the heading */
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif'; /* Consistent font */
+    font-size: 1.8em;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
-/* Styling for the updates list */
+/* Scrollable updates container with fade effect */
 .updates-list {
-    padding-left: 20px; /* Indentation for bullet points */
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif'; /* Matches other text on the page */
-    font-size: 1em; /* Consistent font size with the rest of the page */
+    padding-left: 0;
+    list-style: none;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1em;
     color: #333;
-    line-height: 1.5em; /* Clear line spacing for readability */
+    line-height: 1.6em;
+    max-height: 180px;
+    overflow-y: auto;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.updates-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.updates-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.updates-list::-webkit-scrollbar-thumb {
+    background: #d5d5d5;
+    border-radius: 3px;
+}
+
+.updates-list::-webkit-scrollbar-thumb:hover {
+    background: #b0b0b0;
+}
+
+/* Fade effect at bottom */
+.updates-events-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,1) 100%);
+    pointer-events: none;
 }
 
 .updates-list li {
-    font-size: 1em; /* Set updates header size */
-    color:  #4e4e4e;
-    margin-bottom: 8px; /* Space between list items for clarity */
-}
-/* Social Media Bar Styling */
-.social-bar {
-	margin-top: 2px;
-	display: flex;
-	justify-content: flex-start;
-	gap: 5px; /* Spacing between icons */
+    font-size: 1em;
+    color: #4e4e4e;
+    margin-bottom: 15px;
+    padding-left: 0;
 }
 
-.social-bar a img {
-	width: 17px;
-	height: 17px;
-	transition: transform 0.2s ease;
-}
-
-.social-bar a img:hover {
-	transform: scale(1.2); /* Enlarge icon on hover */
-}
-
-/* Additional styling for other elements */
-.header-container {
-	text-align: center; /* Ensure the profile section is centered */
-}
-
-.header-container img {
-	width: 100%;
-    max-width: 250px;
-    height: auto;
-	border-radius: 15%; /* Make the profile picture circular */
-}
-
-/* Profile image and caption (social media) styling */
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile img {
-    width: 250px;
-    height: auto;
-    border-radius: 10%;
-    object-fit: cover;
-    margin-bottom: 5px; /* Small gap between image and social bar */
-}
-
-.profile figcaption {
-    display: flex;
-    justify-content: center;
-    gap: 9px; /* Spacing between social icons */
-    margin-top: 0; /* No extra margin for the figcaption */
-}
-
-.profile figcaption a img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.2s ease;
-}
-
-.profile figcaption a img:hover {
-    transform: scale(1.2); /* Enlarge icon on hover */
+.updates-list li b {
+    color: #4e4e4e;
+    font-weight: 600;
+    margin-right: 8px;
 }
 
 /* Responsive Media Queries */
 
 /* For small devices (phones) */
 @media (max-width: 600px) {
+    body {
+        width: 90%;
+    }
+    
     .header-container {
-        align-items: center; /* Center the content on smaller screens */
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    .profile {
+        align-items: left;
+    }
+    
+    .profile figcaption {
+        justify-content: center;
     }
 
-    .blurb {
-        text-align: center; /* Center text for better readability */
+    .blurb-right {
+        text-align: center;
     }
-
-    .social-bar {
-        justify-content: center; /* Center the social icons */
+    
+    .publication-entry {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .paper-thumbnail {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
     }
 }
 
 /* For tablets or medium-sized screens */
 @media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        width: 75%;
+    }
+    
     .header-container {
-        flex-direction: row; /* Arrange image and text side by side on larger screens */
-        justify-content: space-between;
-    }
-
-    .blurb {
-        max-width: 600px; /* Limit the width of text for readability */
-    }
-
-    .social-bar {
-        justify-content: flex-start; /* Left-align the icons */
+        gap: 20px;
     }
 }
