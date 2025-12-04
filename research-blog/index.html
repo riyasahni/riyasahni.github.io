@@ -1,13 +1,13 @@
 ---
 layout: back_to_home
-title: My two cents
+title: Research Blog
 ---
 	<h1>{{ page.title }}</h1>
-	<p>Welcome to my advice column! I'm using this space to answer some common questions that I get about navigating undergraduate, graduate, and grant applications, as well as young-adulthood in general. Stay tuned! :) </p>
+	<p>Welcome to my blog! Here I will share experiments, mini projects, and other research updates :) </p>
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    {% if post.category == "advice" %}
+	    {% if post.category == "research" %}
 	      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	    {% endif %}
 	  {% endfor %}

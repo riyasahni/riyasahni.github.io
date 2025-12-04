@@ -239,6 +239,19 @@ section {
     display: block;
 }
 
+/* Blog post list styling - match body text */
+ol, ul {
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+ol li, ul li {
+    color: #333;
+    margin-bottom: 10px;
+}
+
 /* Profile section layout - photo left, blurb right */
 .header-container {
     display: flex;
@@ -482,6 +495,117 @@ section {
     color: #4e4e4e;
     font-weight: 600;
     margin-right: 8px;
+}
+
+/* Walkthrough Section Styling */
+.walkthrough-section {
+    max-width: 900px;
+    margin: 3em auto;
+    padding: 0 1em;
+}
+
+.walkthrough-step {
+    margin-bottom: 4em;
+    scroll-margin-top: 2em;
+}
+
+.walkthrough-step h3 {
+    color: #2c3e50;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+.walkthrough-step p {
+    margin-bottom: 1.5em;
+    line-height: 1.6em;
+}
+
+.walkthrough-image {
+    display: block;
+    margin: 2em auto;
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.walkthrough-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.image-caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.8em;
+    margin-bottom: 2em;
+    line-height: 1.4em;
+}
+
+.image-pair {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 2em auto;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+}
+
+.image-pair img {
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-pair img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.walkthrough-step::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, #ddd, transparent);
+    margin: 3em auto 0;
+}
+
+.walkthrough-step:last-child::after {
+    display: none;
+}
+
+.image-placeholder {
+    background: #f9f9f9;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    padding: 3em 2em;
+    margin: 2em auto;
+    text-align: center;
+    color: #666;
+}
+
+.image-placeholder p {
+    margin: 0.5em 0;
+    font-style: italic;
+}
+
+.image-placeholder strong {
+    color: #333;
+    font-size: 1.1em;
 }
 
 /* Responsive Media Queries */
