@@ -6,8 +6,23 @@ date: 2025-11-21
 category: research
 ---
 
+<img src="/img/research-update-1/aboveTheFold.png" alt="Rasoi workflow: Paper to Spec to Vibecode to System" class="hero-image" style="width: 100%; max-height: 400px; object-fit: cover; object-position: center; margin-bottom: 2em; border-radius: 8px;">
 
-Over the last few months, I've been trying to recreate HCI systems from their research papers by vibecoding. 
+Over the last few months, I've been vibecoding HCI systems from their research papers.
+
+I thought it would be straightforward, since the papers are basically detailed specs, and most scaffolds ran without throwing syntax errors (Claude Sonnet 4.5 with Cline has been reliable for me).
+
+**The real challenge was trust.**
+
+Every time I vibecoded a system, I'd wonder:
+* *Did it actually query GPT or just hardcode responses?*
+* *Is it using my exact prompts or did it hallucinate new ones?*
+* *Is it updating the database or just local storage?*
+
+I didn't want to vibecode something that just *looked* right from the frontend. I wanted to know what was actually happening under the hood.
+
+
+<!-- Over the last few months, I've been trying to recreate HCI systems from their research papers by vibecoding. 
 
 It has been a challenge, but not in the ways that I expected. 
 
@@ -29,7 +44,7 @@ This pushed me to more deliberately start asking:
 
 1. Which backend signals (prompts, workflow stages, file changes, etc.) are actually useful for helping developers detect silent failures in vibecoded systems?
 
-2. If I surface those signals, does it actually change how people debug (diagnosing problems, intervening, and steering the system back toward their intended behavior)?
+2. If I surface those signals, does it actually change how people debug (diagnosing problems, intervening, and steering the system back toward their intended behavior)? -->
 
 **most agent code generation is spec-driven**
 ---
