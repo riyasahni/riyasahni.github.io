@@ -646,6 +646,34 @@ ol li, ul li {
     }
 }
 
+/* Mobile portrait - stack images vertically */
+@media (max-width: 600px) and (orientation: portrait) {
+    .image-pair {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-pair img {
+        max-width: 100%;
+        max-height: none;
+    }
+}
+
+/* Mobile landscape - keep side-by-side but smaller */
+@media (max-width: 900px) and (orientation: landscape) {
+    .image-pair img {
+        max-height: 350px;
+    }
+}
+
+/* Tablets and medium screens - scale down to fit side-by-side */
+@media (min-width: 601px) and (max-width: 900px) {
+    .image-pair img {
+        max-height: 400px;
+        max-width: 48%;
+    }
+}
+
 /* For tablets or medium-sized screens */
 @media (min-width: 600px) and (max-width: 1200px) {
     body {

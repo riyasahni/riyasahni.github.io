@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "I built a transparency dashboard to catch silent failures in vibecoded systems, and here's what I found."
+title: "Is your Vibecoding Agent Lying To You?"
+# title: "I built a transparency dashboard to catch silent failures in vibecoded systems, and here's what I found."
 date: 2025-11-21
 category: research
 ---
@@ -38,14 +39,14 @@ Spec-driven vibecoding is common in tools like Lovable, Replit, and Bubble.io wh
 
 But "oversight" only works if I can actually see what the agent is doing.
 
-Right now, the hardest vibecoded parts for me to trust have been exatly in the places that matter the most for these HCI systems:
+Right now, the hardest vibecoded parts for me to trust have been exactly in the places that matter the most for these HCI systems:
 * what prompts are being sent,
 * how are workflows and stages being wired togehter,
 * and how are the underlying data structures and database entries changing over time
 
 Just looking at the raw logs or traces wasn't particularly helpful for me. My goal was to surface the internal signals that help me answer whether the vibecoded system was really doing what I asked, and *where did it drift from my intent?*. 
 
-If you're into this rabit hole, there's some nice related work:
+If you're into this rabbit hole, there's some nice related work:
 https://arxiv.org/abs/2306.01941
 https://arxiv.org/pdf/2509.10652
 
@@ -157,7 +158,7 @@ Jumpstarter is an HCI system that takes in a user's goal (like *"I want to apply
 </div>
 
 <div class="walkthrough-step">
-<h3>5. The generated Jumpstarter system (above) and Transparency Dashboard open simultaneously. I enter my goal into Jumpstarter and click "Start Planning"</h3>
+<h3>5. The generated Jumpstarter system and Transparency Dashboard open simultaneously. I enter my goal into Jumpstarter and click "Start Planning"</h3>
 <!-- [PUT THE TASK TREE DATA STRUCTURE FIRST, BEFORE THE BACKEND PROMPT PART] -->
 <img src="/img/research-update-1/jumpstarter_input_goal.png" alt="Entering goal in Jumpstarter" class="walkthrough-image">
 <p class="image-caption">I enter my goal: "I want to host Thanksgiving dinner this year"</p>
