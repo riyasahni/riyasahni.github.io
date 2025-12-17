@@ -8,7 +8,14 @@ title: Research Blog
 
 	  {% for post in site.posts %}
 	    {% if post.category == "research" %}
-	      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	      <li class="post-item">
+	        {% if post.teaser_image %}
+	          <img src="{{ post.teaser_image }}" alt="{{ post.title }}" class="post-teaser">
+	        {% endif %}
+	        <div class="post-info">
+	          <span class="post-date">{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+	        </div>
+	      </li>
 	    {% endif %}
 	  {% endfor %}
 	</ul>

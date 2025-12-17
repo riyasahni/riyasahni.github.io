@@ -1,16 +1,20 @@
 ---
 layout: post
-title: "Is your Vibecoding Agent Lying To You?"
+# title: "Is your Vibecoding Agent Lying To You?"
 # title: "I built a transparency dashboard to catch silent failures in vibecoded systems, and here's what I found."
+title: "Injecting transparency into vibecoding interfaces"
 date: 2025-11-21
 category: research
+teaser_image: /img/research-update-1/teaserFigure2.png
 ---
 
-<img src="/img/research-update-1/aboveTheFold.png" alt="Rasoi workflow: Paper to Spec to Vibecode to System" class="hero-image" style="width: 100%; max-height: 400px; object-fit: cover; object-position: center; margin-bottom: 2em; border-radius: 8px;">
+<img src="/img/research-update-1/teaserFigure2.png" alt="Rasoi workflow: Paper to Spec to Vibecode to System" class="hero-image" style="width: 100%; height: auto; margin-bottom: 2em; border-radius: 8px;">
 
 Over the last few months, I've been vibecoding HCI systems from their research papers.
 
-I thought it would be straightforward, since the papers are basically detailed specs, and most scaffolds ran without throwing syntax errors (Claude Sonnet 4.5 with Cline has been reliable for me).
+I thought it would be straightforward, since the papers provide clear system descriptions and workflows, so I always had a clear target to build towards. And most of the generated code also ran without throwing syntax errors.
+
+But I kept wondering whether my vibecoded implementations were *actually* doing what I intended them to do. 
 
 **The real challenge was trust.**
 
@@ -19,10 +23,9 @@ Every time I vibecoded a system, I'd wonder:
 * *Is it using my exact prompts or did it hallucinate new ones?*
 * *Is it updating the database or just local storage?*
 
-I didn't want to vibecode something that just *looked* right from the frontend. I wanted to know what was actually happening under the hood.
+I didn't want to vibecode something that just *looked* right from the frontend. I wanted to know how the backend was actually implementing the generated systems.
 
-
-<!-- Over the last few months, I've been trying to recreate HCI systems from their research papers by vibecoding. 
+<!-- Over the last few months, I've been trying to recreate HCI systems from their research papers by vibecoding.
 
 It has been a challenge, but not in the ways that I expected. 
 
