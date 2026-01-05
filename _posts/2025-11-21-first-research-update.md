@@ -5,10 +5,10 @@ layout: post
 title: "Injecting transparency into vibecoding interfaces"
 date: 2025-11-21
 category: research
-teaser_image: /img/research-update-1/teaserFigure2.png
+teaser_image: /img/research-update-1/teaserFigure3.png
 ---
 
-<img src="/img/research-update-1/teaserFigure2.png" alt="Rasoi workflow: Paper to Spec to Vibecode to System" class="hero-image" style="width: 100%; height: auto; margin-bottom: 2em; border-radius: 8px;">
+<img src="/img/research-update-1/teaserFigure3.png" alt="Rasoi workflow: Paper to Spec to Vibecode to System" class="hero-image" style="width: 100%; height: auto; margin-bottom: 2em; border-radius: 8px;">
 
 Over the last few months, I've been vibecoding HCI systems from their research papers.
 
