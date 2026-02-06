@@ -2,7 +2,7 @@
   authors: "Riya Sahni*, Jenny Ma*, Karthik Sreedhar, Lydia B. Chilton"
   venue: "Under Submission"
   thumbnail: "/img/agentdynex_thumbnail.png"
-  pdf: "https://arxiv.org/pdf/2504.09662"
+  pdf: "/papers/agentdynex_paper.pdf"
 
 - title: "Beyond Training: How Workers Discover Value in Enterprise AI"
   authors: "Riya Sahni, Lydia B. Chilton"
