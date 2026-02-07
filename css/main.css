@@ -786,20 +786,53 @@ ol li, ul li {
         transform: scale(0.66);
     }
 
-    .star-wars-top-right {
-        top: -25px;
-        right: -55px;
-        transform: rotate(4deg);
-    }
+.star-wars-top-right {
+    top: -25px;
+    right: -55px;
+    transform: rotate(4deg);
+}
 
-    .star-wars-bottom-left {
-        bottom: -25px;
-        left: -10px;
-        transform: rotate(0deg) scale(0.8);
-    }
+.star-wars-bottom-left {
+    bottom: -25px;
+    left: -10px;
+    transform: rotate(0deg) scale(0.8);
+}
 
-    .star-wars-bottom-right {
-        bottom: -25px;
-        right: -40px;
-        transform: rotate(5deg) scale(0.8);
-    }
+.star-wars-bottom-right {
+    bottom: -25px;
+    right: -40px;
+    transform: rotate(5deg) scale(0.8);
+}
+
+
+/* Advice Theme Stickers */
+.advice-deco {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+}
+
+.advice-top-left {
+    top: -25px;
+    left: -10px;
+    transform: rotate(-10deg);
+}
+
+.advice-bottom-right {
+    bottom: -20px;
+    right: -10px;
+    transform: rotate(10deg);
+}
+
+.advice-bottom-left {
+    bottom: -20px;
+    left: -10px;
+    transform: rotate(-10deg);
+}
+
+.advice-top-right {
+    top: -25px;
+    right: -10px;
+    transform: rotate(10deg);
+}

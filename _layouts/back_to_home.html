@@ -25,6 +25,18 @@
                 body {
                     border: 3px solid #00DDFF !important; /* Electric Blue */
                     box-shadow: 0 0 0 3px #FF0000, 0 0 25px rgba(0,0,0,0.5) !important; /* Red outline + shadow */
+					background-color:#eaf8fb !important;
+                }
+            </style>
+            {% elsif page.category == 'advice' or page.title == 'My two cents' or page.url contains '/blog/' %}
+            <style>
+                html {
+                    background: url('/img/blue_wallpaper.png') no-repeat center center fixed !important;
+                    background-size: cover !important;
+                }
+                body {
+					border: 3px solid #FAF0E6 !important;
+                    background-color: #FAF0E6!important; /* Cream */
                 }
             </style>
             {% endif %}
@@ -32,15 +44,18 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/research-blog">Blog</a> | <a href="/blog">Advice Column</a></li>
-	    		</ul>
-			</nav>
-			
-			<h1>
-				<a href="/">Riya Sahni</a>
-			</h1>
+            <!-- Header with Separator -->
+            <div style="border-bottom: 2px solid rgba(255,255,255,0.7); padding-bottom: 20px; margin-bottom: 30px;">
+                <nav>
+                    <ul>
+                        <li><a href="/research-blog">Blog</a> | <a href="/blog">Advice Column</a></li>
+                    </ul>
+                </nav>
+                
+                <h1>
+                    <a href="/">Riya Sahni</a>
+                </h1>
+            </div>
 		
 			<div class="container">
 			
@@ -58,6 +73,12 @@
                 <img src="/img/darth-vader.png" class="star-wars-deco star-wars-top-right" alt="Vader Decoration">
 				<img src="/img/r2d2c3po.png" class="star-wars-deco star-wars-bottom-left" alt="r2d2c3po Decoration">
 				<img src="/img/chewbacca.png" class="star-wars-deco star-wars-bottom-right" alt="chewbacca Decoration">
+            </div>
+            {% elsif page.category == 'advice' or page.title == 'My two cents' or page.url contains '/blog/' %}
+            <div class="bambi-decorations">
+                <img src="/img/clipbear71.gif" class="advice-deco advice-top-left" alt="Clipbear Decoration">
+                <img src="/img/genie-arabian-nights.png" class="advice-deco advice-top-right" alt="Genie Decoration">
+                <img src="/img/wendy-john-michael.png" class="advice-deco advice-bottom-left" alt="Wendie Decoration">
             </div>
             {% endif %}
 		</body>
