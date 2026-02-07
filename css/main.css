@@ -1,23 +1,35 @@
 html {
     scroll-behavior: smooth;
+    background: url('../img/wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 body {
-    margin: 0px auto;
-    width: 65%;
+    margin: 40px auto; /* Centered with top/bottom margin */
+    width: 70%;
+    padding: 40px 10%;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    background-color: #fafaea; /* Lighter, creamier yellow */
+    /* Brown border + Green outline (via box-shadow) + Shadow */
+    border: 3px solid #8B5A2B;
+    box-shadow: 0 0 0 3px #556B2F, 0 0 25px rgba(0,0,0,0.3);
+    border-radius: 25px;
+    position: relative;
 }
+
 header {
-    background: rgb(53, 41, 116);
+    background: #8B5A2B; /* Warm Brown */
+    border-radius: 15px 15px 0 0; /* Optional: soften header corners */
 }
 header h1 {
-    color: white;
+    color: #FFFACD; /* Butter Yellow text for contrast */
 }
 header h2 {
     font-weight: 300;
     margin: 20px;
-    color: rgb(116, 130, 230);
+    color: #C1D7AE; /* Soft Green */
 }
 nav ul, footer ul {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
@@ -28,6 +40,7 @@ nav ul, footer ul {
 
 .publication-links a:hover {
     text-decoration: underline;
+    color: #556B2F; /* Forest Green */
 }
 nav {
     float: right;
@@ -40,7 +53,7 @@ img {
 }
 nav ul li {
     display: inline;
-    font-size: 1em;
+    font-size: 1.3em;
     color: #4e4e4e;
 }
 
@@ -51,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff9500;
+    color: #556B2F; /* Forest Green */
 }
 
 footer ul li {
@@ -67,8 +80,8 @@ a:hover {
     text-decoration: none;
 }
 h1 {
-    font-size: 2em;
-    color: #4e4e4e;
+    font-size: 2.8em;
+    color: #5D4037; /* Dark Brown */
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     transition: color 0.3s ease;
     text-align: left;
@@ -77,12 +90,12 @@ h1 {
 }
 
 h1 a {
-    color: #4e4e4e;
+    color: #5D4037; /* Dark Brown */
     text-decoration: none;
 }
 
 h1 a:hover {
-    color: #ff9500;
+    color: #556B2F; /* Forest Green */
 }
 p {
     font-size: 1em;
@@ -137,13 +150,13 @@ footer {
     text-align: right;
     color: #4e4e4e;
     text-decoration: none;
-    font-size: 0.95em;
+    font-size: 1.5em; /* Restoring user's manual change */
     transition: color 0.3s ease;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 .back-to-top:hover {
-    color: #ff9500;
+    color: #556B2F; /* Forest Green */
 }
 ul.socials {
     border-bottom: 1px solid #d5d5d5;
@@ -169,7 +182,7 @@ ul.socials {
 }
 
 .blog-nav a:hover {
-    color: #ff9500;
+    color: #556B2F; /* Forest Green */
 }
 
 .back-home {
@@ -219,7 +232,7 @@ ul.posts li a {
 }
 
 ul.posts li a:hover {
-    color: #1166bb;
+    color: #556B2F; /* Forest Green */
     text-decoration: underline;
 }
 
@@ -231,8 +244,8 @@ ul.posts li a:hover {
 }
 
 .post-teaser {
-    width: 120px;
-    height: 80px;
+    width: 200px;
+    height: 140px;
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
@@ -449,7 +462,7 @@ ol li, ul li {
 
 .publication-links a:hover {
     text-decoration: underline;
-    color: #1166bb;
+    color: #556B2F; /* Forest Green */
 }
 
 /* Updates and Events section - left-aligned */
@@ -713,3 +726,80 @@ ol li, ul li {
         gap: 20px;
     }
 }
+
+/* Bambi Decorations */
+.bambi-decorations {
+    pointer-events: none; /* Let clicks pass through */
+    /* Container is now inside body (relative), so we don't need fixed positioning for the wrapper */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    z-index: 1000; /* Stick on top */
+}
+
+.bambi-deco {
+    position: absolute;
+    width: 140px; /* Slightly larger for sticker effect */
+    height: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); /* Sticker shadow */
+}
+
+/* Sticker placements - More overlapping the yellow content */
+.bambi-deco.bottom-right {
+    bottom: -25px;
+    right: -35px;
+    transform: rotate(15deg);
+}
+
+.bambi-deco.bottom-left {
+    bottom: -15px;
+    left: -10px;
+    transform: rotate(-10deg);
+}
+
+.bambi-deco.top-left {
+    top: -25px;
+    left: -10px;
+    transform: rotate(-20deg);
+}
+
+.bambi-deco.top-right {
+    top: -25px;
+    right: -10px;
+    transform: rotate(10deg);
+}
+
+/* Star Wars Theme Stickers */
+.star-wars-deco {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+}
+
+    .star-wars-top-left {
+        top: -70px;
+        left: -60px;
+        transform: scale(0.66);
+    }
+
+    .star-wars-top-right {
+        top: -25px;
+        right: -55px;
+        transform: rotate(4deg);
+    }
+
+    .star-wars-bottom-left {
+        bottom: -25px;
+        left: -10px;
+        transform: rotate(0deg) scale(0.8);
+    }
+
+    .star-wars-bottom-right {
+        bottom: -25px;
+        right: -40px;
+        transform: rotate(5deg) scale(0.8);
+    }

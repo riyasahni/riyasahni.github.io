@@ -20,7 +20,7 @@
 		<body>
 			<nav>
 	    		<ul>
-	        		<li><a href="#research">Research</a> | <a href="#updates">Updates</a> | <a href="/research-blog">Blog</a> | <a href="/blog">Advice Column</a></li>
+	        		<li><a <a href="/research-blog">Blog</a> | <a href="/blog">Advice Column</a></li>
 	    		</ul>
 			</nav>
 			
@@ -109,9 +109,37 @@
 				<p class="footer-last-updated">Last updated: {{ site.time | date: "%B %d, %Y" }}</p>
 				<div class="footer-center">
 					<p class="footer-quote">"The woods are lovely, dark and deep, but I have promises to keep, and miles to go before I sleep, and miles to go before I sleep."</p>
-					<p class="footer-emoji">🌔</p>
+					<p class="footer-emoji" id="moon-phase">🌔</p>
 				</div>
 				<a href="#top" class="back-to-top">↑ Up</a>
 			</footer>
+
+			<!-- Decorations -->
+			<div class="bambi-decorations">
+				<img src="/img/bambi3.png" class="bambi-deco top-left" alt="Bambi Decoration">
+				<img src="/img/walle2.png" class="bambi-deco bottom-left" alt="Wall-E Decoration">
+				<img src="/img/winnie-the-pooh-kite.png" class="bambi-deco bottom-right" alt="Winnie the Pooh Decoration">
+			</div>
+
+			<script>
+			function getMoonPhase() {
+				const now = new Date();
+				const synodic = 29.53058867;
+				const knownNewMoon = new Date('2000-01-06T18:14:00Z');
+				const diffDays = (now - knownNewMoon) / (1000 * 60 * 60 * 24);
+				const phase = (diffDays % synodic) / synodic;
+				
+				// Moon phases: New, Waxing Crescent, First Quarter, Waxing Gibbous, Full, Waning Gibbous, Last Quarter, Waning Crescent
+				const emojis = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘'];
+				
+				// Map 0-1 to 0-7. Rounding ensures we get the closest phase.
+				const index = Math.round(phase * 8) % 8;
+				const emoji = emojis[index];
+				
+				const el = document.getElementById('moon-phase');
+				if (el) el.textContent = emoji;
+			}
+			document.addEventListener('DOMContentLoaded', getMoonPhase);
+			</script>
 		</body>
 	</html>
