@@ -20,6 +20,7 @@
   venue: "HICSS 2026"
   thumbnail: "/img/copilot_thumbnail.png"
   paper: "https://www.semanticscholar.org/paper/Beyond-Training%3A-How-Workers-Discover-Value-in-AI-Sahni-Chilton/3a11e5c244ff13a6c161f2d67a376ea9df0e68e2"
+  news: "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/the-organization-blog/redefine-ai-upskilling-as-a-change-imperative"
 
 - title: "DynEx: Dynamic Code Synthesis with Structured Design Exploration for Accelerated Exploratory Programming"
   authors: "Jenny Ma, Karthik Sreedhar, Vivian Liu, Sitong Wang, Pedro Alejandro Perez, Riya Sahni, Lydia B. Chilton"
