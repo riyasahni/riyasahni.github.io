@@ -73,13 +73,16 @@
 							<div class="publication-entry">
 								<img src="{{ pub.thumbnail }}" alt="{{ pub.title }} Thumbnail" class="paper-thumbnail">
 								<div class="publication-content">
-									<div class="paper-title"><b>{{ pub.title }}</b></div>
+									{% assign pub_link = pub.paper | default: pub.acm | default: pub.pdf %}
+									<div class="paper-title"><b>{% if pub_link %}<a href="{{ pub_link }}" target="_blank">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</b></div>
 									<div class="paper-authors">
 										{{ pub.authors | replace: "Riya Sahni", "<b>Riya Sahni</b>" }}
 									</div>
 									<span class="paper-details">{{ pub.venue }}</span>
-									{% if pub.pdf or pub.video or pub.code or pub.website or pub.acm or pub.news %}
+									{% if pub.note %}<div class="paper-note"><i>{{ pub.note }}</i></div>{% endif %}
+									{% if pub.paper or pub.pdf or pub.video or pub.code or pub.website or pub.acm or pub.news %}
 									<div class="publication-links">
+										{% if pub.paper %}<a href="{{ pub.paper }}" target="_blank">[Paper]</a>{% endif %}
 										{% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank">[PDF]</a>{% endif %}
 										{% if pub.video %}<a href="{{ pub.video }}" target="_blank">[Video]</a>{% endif %}
 										{% if pub.acm %}<a href="{{ pub.acm }}" target="_blank">[ACM]</a>{% endif %}

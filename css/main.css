@@ -389,19 +389,24 @@ ol li, ul li {
 /* Publication entry using CSS Grid for clean alignment */
 .publication-entry {
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 200px 1fr;
     gap: 25px;
     align-items: start;
 }
 
-/* Paper thumbnail */
+/* Paper thumbnail: every figure sits in an identical 2:1 frame */
 .paper-thumbnail {
     width: 200px;
+    aspect-ratio: 2 / 1;
     height: auto;
     object-fit: contain;
-    border-radius: 8%;
-    margin-top: 0;
-    padding-top: 0;
+    box-sizing: border-box;
+    padding: 4px;
+    background: #fff;
+    border: 1px solid #e6dfc6;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(93, 64, 55, 0.08);
+    margin: 0;
 }
 
 /* Publication content */
@@ -422,6 +427,29 @@ ol li, ul li {
     line-height: 1.3em;
     margin: 0;
     padding: 0;
+}
+
+/* Linked titles look the same as unlinked ones */
+.paper-title a {
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+.paper-title a:hover {
+    color: #556B2F; /* Forest Green */
+}
+
+/* Readable links in the blurb and updates */
+.blurb-right a,
+.updates-list a {
+    color: #8B5A2B; /* Warm Brown, matches the border */
+    transition: color 0.2s ease;
+}
+
+.blurb-right a:hover,
+.updates-list a:hover {
+    color: #556B2F; /* Forest Green */
+    text-decoration: underline;
 }
 
 /* Author styling */
@@ -520,7 +548,7 @@ ol li, ul li {
     left: 0;
     right: 0;
     height: 60px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(250,250,234,0) 0%, rgba(250,250,234,0.9) 50%, rgba(250,250,234,1) 100%); /* fades into the cream page */
     pointer-events: none;
 }
 
@@ -835,4 +863,50 @@ ol li, ul li {
     top: -25px;
     right: -10px;
     transform: rotate(10deg);
+}
+
+/* Phones: smaller stickers, with room reserved so they never cover text or buttons */
+@media (max-width: 600px) {
+    body {
+        width: calc(100% - 24px);
+        margin: 16px auto;
+        padding: 70px 18px 150px; /* top and bottom space for the stickers */
+        border-radius: 18px;
+    }
+
+    .bambi-deco,
+    .star-wars-deco,
+    .advice-deco {
+        width: 72px;
+    }
+
+    .star-wars-top-left {
+        top: -30px;
+        left: -20px;
+    }
+
+    .header-container {
+        gap: 20px;
+    }
+
+    .publication-entry {
+        grid-template-columns: 1fr;
+    }
+
+    .paper-thumbnail {
+        width: 100%;
+        max-width: 320px;
+        margin: 0;
+    }
+
+    .custom-footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .footer-last-updated,
+    .back-to-top {
+        text-align: center;
+    }
 }
