@@ -8,12 +8,16 @@
   authors: "Riya Sahni, Christine Dierk, Lydia B. Chilton, Eunyee Koh, Doga Dogan*, Tongyu Zhou*"
   venue: "Under Review"
   thumbnail: "/img/roop_teaser.jpg"
+  paper: "/papers/roop_paper.pdf"
+  video: "/videos/roop_video_demo.mp4"
 
 - title: "AgentDynEx: Nudging the Mechanics and Dynamics of Multi-Agent Simulations"
   authors: "Jenny Ma*, Riya Sahni*, Karthik Sreedhar, Lydia B. Chilton"
   venue: "HCOMP 2026"
   thumbnail: "/img/hcomp2026-18-fig1.jpg"
   paper: "https://dl.acm.org/doi/10.1145/3834580.3838752"
+  video: "/videos/agentdynex.mp4"
+  code: "https://github.com/riyasahni/AgentDynEx/tree/main/agents-design-prototype"
 
 - title: "Beyond Training: How Workers Discover Value in Enterprise AI"
   authors: "Riya Sahni, Lydia B. Chilton"
