@@ -8,7 +8,7 @@
   authors: "Riya Sahni, Christine Dierk, Lydia B. Chilton, Eunyee Koh, Doga Dogan*, Tongyu Zhou*"
   venue: "Under Review"
   thumbnail: "/img/roop_teaser.jpg"
-  paper: "/papers/roop_paper.pdf"
+  pdf: "/papers/roop_paper.pdf"
   video: "/videos/roop_video_demo.mp4"
 
 - title: "AgentDynEx: Nudging the Mechanics and Dynamics of Multi-Agent Simulations"
