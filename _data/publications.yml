@@ -2,7 +2,7 @@
   authors: "Riya Sahni, Aryan Kaul, Anushka Bhatnagar, Xuanming Zhang, Vivian Liu, Reya Vir, Lydia B. Chilton"
   venue: "Under Submission"
   thumbnail: "/img/rasoi_teaser.jpg"
-  pdf: "/papers/rasoi_paper.pdf"
+  paper: "https://arxiv.org/pdf/2611.16293"
 
 - title: "Who Shaped What? Untangling Human and AI Creative Contributions Through Spatial Provenance in Image Editing"
   authors: "Riya Sahni, Christine Dierk, Lydia B. Chilton, Eunyee Koh, Doga Dogan*, Tongyu Zhou*"
